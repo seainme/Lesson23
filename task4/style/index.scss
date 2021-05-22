@@ -1,0 +1,30 @@
+@import 'layout.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+  }
+  .products {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+  }
+ 
+  @media screen and (min-width: 600px) {
+    .products {
+      flex-direction: row;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    .container {
+      flex-direction: row;
+    }
+  }
+  span {
+    font-family: Verdana;
+    margin: auto;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #faebd7;
+    text-transform: lowercase;
+  }
